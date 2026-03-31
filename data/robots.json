@@ -7,6 +7,7 @@
       "accent": "#f97316",
       "champion": {
         "name": "Figure 02",
+        "image": "/images/robots/figure-02.webp",
         "company": "Figure AI",
         "country": "USA",
         "reason": "Completed an 11-month deployment at BMW's Spartanburg plant — the longest publicly documented humanoid factory deployment. Loaded 90,000+ parts, contributed to 30,000+ BMW X3 vehicles.",
@@ -25,6 +26,7 @@
       "accent": "#34d399",
       "champion": {
         "name": "Atlas (Electric)",
+        "image": "/images/robots/atlas-electric.webp",
         "company": "Boston Dynamics",
         "country": "USA (Hyundai)",
         "reason": "Production version unveiled at CES 2026. 30+ years of R&D distilled into an all-electric platform with superhuman range of motion, 56 DoF, and IP67 durability. 2026 production fully committed.",
@@ -43,6 +45,7 @@
       "accent": "#a78bfa",
       "champion": {
         "name": "Galbot G1",
+        "image": "/images/robots/galbot-g1.webp",
         "company": "GALBOT (银河通用)",
         "country": "China",
         "reason": "Powered by billion-scale manipulation datasets and end-to-end embodied AI models (GraspVLA, GroceryVLA). 1000+ industrial units shipped. Runs 24/7 autonomous retail stores.",
@@ -61,6 +64,7 @@
       "accent": "#fbbf24",
       "champion": {
         "name": "小布米 (XiaobuMi)",
+        "image": "/images/robots/xiaobumi.webp",
         "company": "Unknown Startup",
         "country": "China",
         "reason": "Priced at ¥9,998 (~$1,370), breaking the price floor for consumer humanoid robots. Crowdfunded and shipped to early backers.",
@@ -79,6 +83,7 @@
       "accent": "#38bdf8",
       "champion": {
         "name": "Spot",
+        "image": "/images/robots/spot.webp",
         "company": "Boston Dynamics",
         "country": "USA (Hyundai)",
         "reason": "The gold standard for enterprise quadrupeds — proven in power plants, construction sites, and hazardous environments. Autonomous inspection at industrial scale.",
@@ -97,6 +102,7 @@
       "accent": "#f472b6",
       "champion": {
         "name": "π₀ (Pi-Zero)",
+        "image": "/images/robots/pi-zero.webp",
         "company": "Physical Intelligence",
         "country": "USA",
         "reason": "A generalist robot foundation model that controls multiple robot types across diverse tasks — folding laundry, bussing tables, assembling boxes — from a single neural network. The GPT moment for robotics.",
@@ -115,6 +121,7 @@
       "accent": "#6ee7b7",
       "champion": {
         "name": "N2 小顽童",
+        "image": "/images/robots/n2-xiaowantong.webp",
         "company": "SoulGate (松延动力)",
         "country": "China",
         "reason": "Runner-up at the world's first humanoid robot half-marathon (Beijing Yizhuang, 2025). First humanoid to perform continuous backflips across indoor and outdoor environments.",
@@ -133,6 +140,7 @@
       "accent": "#fb923c",
       "champion": {
         "name": "MagicBot Z1",
+        "image": "/images/robots/magicbot-z1.webp",
         "company": "MagicAtom (魔法原子)",
         "country": "China",
         "reason": "AI-powered emotion sensing via voice and facial expression analysis. Can respond to human gestures and emotional states in real-time. Deployed in unmanned café, tea shop, and pharmacy scenarios.",

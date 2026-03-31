@@ -6,6 +6,7 @@ import robotData from "@/data/robots.json";
 type Stat = { label: string; value: string };
 type Champion = {
   name: string;
+  image?: string;
   company: string;
   country: string;
   reason: string;
@@ -26,22 +27,50 @@ function RobotCard({
   category: Category;
   index: number;
 }) {
-  const { label, accent, champion } = category;
+  const { id, label, accent, champion } = category;
+  const [imgError, setImgError] = useState(false);
+  const basePath = process.env.NODE_ENV === "production" ? "/robot-leaderboard" : "";
+  const imageSrc = champion.image ? `${basePath}${champion.image}` : null;
 
   return (
     <div
       className="card-animate rounded-xl border border-border bg-surface hover:bg-surface-hover transition-colors duration-200"
       style={{ animationDelay: `${index * 80}ms`, borderTopWidth: "3px", borderTopColor: accent }}
     >
-      <div className="p-6">
-        {/* Category label */}
+      {/* Robot image */}
+      <div className="relative h-48 overflow-hidden">
+        {imageSrc && !imgError ? (
+          <img
+            src={imageSrc}
+            alt={champion.name}
+            className="w-full h-full object-cover"
+            onError={() => setImgError(true)}
+          />
+        ) : (
+          <div
+            className="w-full h-full flex items-center justify-center"
+            style={{
+              background: `linear-gradient(135deg, ${accent}18 0%, ${accent}08 50%, transparent 100%)`,
+            }}
+          >
+            <span className="text-5xl font-bold font-mono opacity-20" style={{ color: accent }}>
+              {champion.name.charAt(0)}
+            </span>
+          </div>
+        )}
+        {/* Bottom gradient fade into card */}
+        <div className="absolute inset-x-0 bottom-0 h-20 bg-gradient-to-t from-surface to-transparent" />
+        {/* Category pill overlay */}
         <div
-          className="font-mono text-xs font-bold uppercase tracking-wider mb-1"
-          style={{ color: accent }}
+          className="absolute top-3 left-3 font-mono text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full"
+          style={{ color: accent, backgroundColor: `${accent}20` }}
         >
           {label}
         </div>
-        <div className="text-text-sub text-xs mb-3">Current Champion</div>
+      </div>
+
+      <div className="p-6 pt-2">
+        <div className="text-text-sub text-xs mb-2">Current Champion</div>
 
         {/* Robot name */}
         <h3 className="text-2xl font-bold text-text mb-1">{champion.name}</h3>
