@@ -63,8 +63,8 @@ function RobotCard({
         />
         {/* Category pill overlay */}
         <div
-          className="absolute top-3 left-3 font-mono text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full"
-          style={{ color: accent, backgroundColor: `${accent}20` }}
+          className="absolute top-3 left-3 font-mono text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded-full backdrop-blur-sm"
+          style={{ color: accent, backgroundColor: `${accent}30`, border: `1px solid ${accent}40` }}
         >
           {label}
         </div>

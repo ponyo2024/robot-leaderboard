@@ -1,23 +1,23 @@
 {
-  "lastUpdated": "2026-02",
+  "lastUpdated": "2026-03",
   "categories": [
     {
       "id": "industrial",
       "label": "🏭 Best Factory Worker",
       "accent": "#f97316",
       "champion": {
-        "name": "Figure 02",
-        "image": "/images/robots/figure-02.webp",
+        "name": "Figure 03",
+        "image": "/images/robots/figure03.jpg",
         "company": "Figure AI",
         "country": "USA",
-        "reason": "Completed an 11-month deployment at BMW's Spartanburg plant — the longest publicly documented humanoid factory deployment. Loaded 90,000+ parts, contributed to 30,000+ BMW X3 vehicles.",
+        "reason": "First humanoid engineered for high-volume manufacturing. Deployed at BMW facility with 400% efficiency boost on key assembly tasks. Appeared alongside Melania Trump at the White House AI Education Summit. Priced at $20,000 — a breakthrough for commercial humanoids.",
         "stats": [
-          { "label": "Runtime", "value": "1,250 hrs" },
-          { "label": "Cycle Time", "value": "84 sec" },
-          { "label": "Precision", "value": "5mm tolerance" },
+          { "label": "Price", "value": "$20,000" },
+          { "label": "FOV", "value": "60% wider" },
+          { "label": "Latency", "value": "¼ of F02" },
           { "label": "Funding", "value": "$1.75B" }
         ],
-        "latestUpdate": "Figure 03 announced, F02 retired from BMW — Nov 2025"
+        "latestUpdate": "White House debut with Melania Trump at AI Summit — Mar 2026"
       }
     },
     {
@@ -29,14 +29,14 @@
         "image": "/images/robots/atlas-electric.webp",
         "company": "Boston Dynamics",
         "country": "USA (Hyundai)",
-        "reason": "Production version unveiled at CES 2026. 30+ years of R&D distilled into an all-electric platform with superhuman range of motion, 56 DoF, and IP67 durability. 2026 production fully committed.",
+        "reason": "Production version launched at CES 2026. 30+ years of R&D distilled into an all-electric platform with superhuman range of motion, 56 DoF, and IP67 durability. All 2026 deployments fully committed — shipping to Hyundai RMAC and Google DeepMind.",
         "stats": [
           { "label": "Payload", "value": "50 kg" },
           { "label": "Reach", "value": "2.3 m" },
           { "label": "Battery Swap", "value": "3 min" },
-          { "label": "Est. Price", "value": "~$420K" }
+          { "label": "Factory Plan", "value": "30K/yr" }
         ],
-        "latestUpdate": "Production-ready version launched at CES — Jan 2026"
+        "latestUpdate": "2026 production fully committed; 30K/yr factory planned for 2028 — Mar 2026"
       }
     },
     {
@@ -48,14 +48,14 @@
         "image": "/images/robots/galbot-g1.webp",
         "company": "GALBOT (银河通用)",
         "country": "China",
-        "reason": "Powered by billion-scale manipulation datasets and end-to-end embodied AI models (GraspVLA, GroceryVLA). 1000+ industrial units shipped. Runs 24/7 autonomous retail stores.",
+        "reason": "Powered by embodied AI models (GraspVLA, GroceryVLA) with 95–97% grasp success rate. 1,000+ units shipped to BAIC, CATL, and others. Now deployed as China's first pharmacy robot in Beijing Haidian. Priced at ¥630K–700K (~$87K–$97K).",
         "stats": [
           { "label": "Units Shipped", "value": "1,000+" },
-          { "label": "Model", "value": "GraspVLA" },
-          { "label": "Application", "value": "Retail/Logistics" },
-          { "label": "Funding", "value": "$100M+" }
+          { "label": "Grasp Rate", "value": "95–97%" },
+          { "label": "Price", "value": "~$87K" },
+          { "label": "Application", "value": "Pharmacy/Retail" }
         ],
-        "latestUpdate": "GroceryVLA model released for retail applications — 2025"
+        "latestUpdate": "China's first pharmacy robot deployed in Beijing Haidian — Mar 2026"
       }
     },
     {
@@ -65,16 +65,16 @@
       "champion": {
         "name": "小布米 (XiaobuMi)",
         "image": "/images/robots/xiaobumi.webp",
-        "company": "Unknown Startup",
+        "company": "NOETIX (松延动力)",
         "country": "China",
-        "reason": "Priced at ¥9,998 (~$1,370), breaking the price floor for consumer humanoid robots. Crowdfunded and shipped to early backers.",
+        "reason": "Starting at ¥9,998 (~$1,370), breaking the price floor for consumer humanoid robots. Appeared on 2026 CCTV Spring Festival Gala. Core components 90%+ domestically sourced, driving costs down dramatically.",
         "stats": [
-          { "label": "Price", "value": "¥9,998" },
+          { "label": "Price", "value": "¥9,998+" },
           { "label": "USD Equiv.", "value": "~$1,370" },
-          { "label": "Target", "value": "Consumer" },
-          { "label": "Status", "value": "Shipping" }
+          { "label": "Localization", "value": "90%+" },
+          { "label": "Status", "value": "On sale" }
         ],
-        "latestUpdate": "First batch shipped to crowdfund backers — 2025"
+        "latestUpdate": "Spring Gala appearance; on sale at JD.com ¥9,998–¥21,600 — Feb 2026"
       }
     },
     {
@@ -86,14 +86,14 @@
         "image": "/images/robots/spot.webp",
         "company": "Boston Dynamics",
         "country": "USA (Hyundai)",
-        "reason": "The gold standard for enterprise quadrupeds — proven in power plants, construction sites, and hazardous environments. Autonomous inspection at industrial scale.",
+        "reason": "The gold standard for enterprise quadrupeds. Now deployed at scale in AI data centers ($175K–$300K/unit), construction sites, and energy infrastructure. Partnered with FieldAI to build one of the world's largest third-party quadruped fleets.",
         "stats": [
-          { "label": "Deployments", "value": "1,500+" },
+          { "label": "Price", "value": "$175–300K" },
           { "label": "Runtime", "value": "~90 min" },
           { "label": "Payload", "value": "14 kg" },
           { "label": "IP Rating", "value": "IP54" }
         ],
-        "latestUpdate": "Continued fleet expansion across energy sector — 2025"
+        "latestUpdate": "Guarding major AI data centers; FieldAI partnership for construction — Mar 2026"
       }
     },
     {
@@ -105,14 +105,14 @@
         "image": "/images/robots/pi-zero.webp",
         "company": "Physical Intelligence",
         "country": "USA",
-        "reason": "A generalist robot foundation model that controls multiple robot types across diverse tasks — folding laundry, bussing tables, assembling boxes — from a single neural network. The GPT moment for robotics.",
+        "reason": "A generalist robot foundation model controlling multiple robot types across diverse tasks — from a single neural network. Released π0.5 with better open-world generalization, and MEM for complex tasks over 10 minutes. Now raising $1B at $11B valuation.",
         "stats": [
           { "label": "Approach", "value": "Foundation Model" },
-          { "label": "Tasks", "value": "Multi-task" },
-          { "label": "Funding", "value": "$400M" },
-          { "label": "Valuation", "value": "$2B" }
+          { "label": "Platforms", "value": "7 robots" },
+          { "label": "Tasks", "value": "68 unique" },
+          { "label": "Valuation", "value": "$11B" }
         ],
-        "latestUpdate": "Raised $400M Series A at $2B valuation — Nov 2024"
+        "latestUpdate": "Raising $1B at $11B valuation; MEM and π0.5 released — Mar 2026"
       }
     },
     {
@@ -122,16 +122,16 @@
       "champion": {
         "name": "N2 小顽童",
         "image": "/images/robots/n2-xiaowantong.webp",
-        "company": "SoulGate (松延动力)",
+        "company": "NOETIX (松延动力)",
         "country": "China",
-        "reason": "Runner-up at the world's first humanoid robot half-marathon (Beijing Yizhuang, 2025). First humanoid to perform continuous backflips across indoor and outdoor environments.",
+        "reason": "Runner-up at the world's first humanoid robot half-marathon. First humanoid to perform continuous backflips. Official humanoid robot partner for 2026 CCTV Spring Festival Gala. 92 units delivered, company completed 6 rounds of financing.",
         "stats": [
           { "label": "Height", "value": "118 cm" },
           { "label": "Weight", "value": "30 kg" },
-          { "label": "Feat", "value": "Multi-flip" },
+          { "label": "Units Sold", "value": "92" },
           { "label": "Marathon", "value": "2nd place" }
         ],
-        "latestUpdate": "Appeared on CCTV Spring Festival Gala — Feb 2026"
+        "latestUpdate": "Official CCTV Spring Gala robot partner; 6 funding rounds ~¥100M — Feb 2026"
       }
     },
     {
@@ -141,16 +141,16 @@
       "champion": {
         "name": "MagicBot Z1",
         "image": "/images/robots/magicbot-z1.webp",
-        "company": "MagicAtom (魔法原子)",
+        "company": "MagicLab (魔法原子)",
         "country": "China",
-        "reason": "AI-powered emotion sensing via voice and facial expression analysis. Can respond to human gestures and emotional states in real-time. Deployed in unmanned café, tea shop, and pharmacy scenarios.",
+        "reason": "AI-powered emotion sensing via voice and facial expression. 6 units danced with pop stars at 2026 Spring Gala before 1.2 billion viewers — sold out on JD.com within minutes. Deployed in electronics factories for inspection, assembly, and transport.",
         "stats": [
-          { "label": "DoF", "value": "24" },
+          { "label": "DoF", "value": "24–50" },
+          { "label": "Speed", "value": "9 km/h" },
           { "label": "Torque", "value": "130 N·m" },
-          { "label": "Interaction", "value": "Voice + Emotion" },
-          { "label": "Founded", "value": "Jan 2024" }
+          { "label": "Gala Viewers", "value": "1.2B" }
         ],
-        "latestUpdate": "16 units performed on CCTV Spring Festival Gala — Feb 2026"
+        "latestUpdate": "Sold out on JD.com after Spring Gala; factory deployment ongoing — Feb 2026"
       }
     }
   ]
