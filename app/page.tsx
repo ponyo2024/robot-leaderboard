@@ -56,8 +56,11 @@ function RobotCard({
             </span>
           </div>
         )}
-        {/* Bottom gradient fade into card */}
-        <div className="absolute inset-x-0 bottom-0 h-16 bg-gradient-to-t from-surface to-transparent" />
+        {/* Vignette overlay — soft fade on all edges */}
+        <div
+          className="absolute inset-0 pointer-events-none"
+          style={{ boxShadow: "inset 0 0 40px 20px var(--color-surface)" }}
+        />
         {/* Category pill overlay */}
         <div
           className="absolute top-3 left-3 font-mono text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full"
