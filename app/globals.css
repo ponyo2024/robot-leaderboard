@@ -6,8 +6,9 @@
   --color-surface-hover: #1c1c1f;
   --color-border: #2a2a2e;
   --color-text: #e8e8ec;
-  --color-text-dim: #7a7a82;
-  --color-text-muted: #4a4a52;
+  --color-text-dim: #9a9aa2;
+  --color-text-sub: #a0a0a8;
+  --color-text-muted: #8a8a92;
 }
 
 @font-face {
@@ -65,4 +66,13 @@ body {
 
 .card-animate {
   animation: fadeInUp 0.5s ease-out both;
+}
+
+/* Hide scrollbar for filter bar */
+.scrollbar-hide {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
 }

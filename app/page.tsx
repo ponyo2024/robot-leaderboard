@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useRef } from "react";
 import robotData from "@/data/robots.json";
 
 type Stat = { label: string; value: string };
@@ -30,12 +30,9 @@ function RobotCard({
 
   return (
     <div
-      className="card-animate rounded-xl overflow-hidden border border-border bg-surface hover:bg-surface-hover transition-colors duration-200"
-      style={{ animationDelay: `${index * 80}ms` }}
+      className="card-animate rounded-xl border border-border bg-surface hover:bg-surface-hover transition-colors duration-200"
+      style={{ animationDelay: `${index * 80}ms`, borderTopWidth: "3px", borderTopColor: accent }}
     >
-      {/* Top accent bar */}
-      <div className="h-1" style={{ backgroundColor: accent }} />
-
       <div className="p-6">
         {/* Category label */}
         <div
@@ -44,7 +41,7 @@ function RobotCard({
         >
           {label}
         </div>
-        <div className="text-text-dim text-xs mb-3">Current Champion</div>
+        <div className="text-text-sub text-xs mb-3">Current Champion</div>
 
         {/* Robot name */}
         <h3 className="text-2xl font-bold text-text mb-1">{champion.name}</h3>
@@ -89,6 +86,7 @@ function RobotCard({
 
 export default function Home() {
   const [activeFilter, setActiveFilter] = useState("all");
+  const scrollRef = useRef<HTMLDivElement>(null);
   const categories: Category[] = robotData.categories;
 
   const filtered =
@@ -117,37 +115,64 @@ export default function Home() {
 
       {/* Filter bar */}
       <nav className="max-w-5xl mx-auto px-4 mb-10">
-        <div className="flex gap-2 overflow-x-auto pb-2 scrollbar-hide">
-          <button
-            onClick={() => setActiveFilter("all")}
-            className={`font-mono text-xs px-4 py-2 rounded-full border whitespace-nowrap transition-colors ${
-              activeFilter === "all"
-                ? "bg-text text-bg border-text"
-                : "border-border text-text-dim hover:border-text-dim"
-            }`}
-          >
-            All
-          </button>
-          {categories.map((cat) => (
+        <div className="relative">
+          {/* Left gradient + arrow */}
+          <div className="absolute left-0 top-0 bottom-0 z-10 flex items-center">
+            <div className="w-10 h-full bg-gradient-to-r from-bg to-transparent pointer-events-none" />
             <button
-              key={cat.id}
-              onClick={() =>
-                setActiveFilter(activeFilter === cat.id ? "all" : cat.id)
-              }
+              onClick={() => scrollRef.current?.scrollBy({ left: -200, behavior: "smooth" })}
+              className="absolute left-0 w-8 h-8 flex items-center justify-center rounded-full bg-surface border border-border text-text-dim hover:text-text transition-colors"
+              aria-label="Scroll left"
+            >
+              ‹
+            </button>
+          </div>
+
+          {/* Scrollable pills */}
+          <div ref={scrollRef} className="flex gap-2 overflow-x-auto scrollbar-hide px-10">
+            <button
+              onClick={() => setActiveFilter("all")}
               className={`font-mono text-xs px-4 py-2 rounded-full border whitespace-nowrap transition-colors ${
-                activeFilter === cat.id
-                  ? "text-bg border-transparent"
+                activeFilter === "all"
+                  ? "bg-text text-bg border-text"
                   : "border-border text-text-dim hover:border-text-dim"
               }`}
-              style={
-                activeFilter === cat.id
-                  ? { backgroundColor: cat.accent }
-                  : undefined
-              }
             >
-              {cat.label}
+              All
             </button>
-          ))}
+            {categories.map((cat) => (
+              <button
+                key={cat.id}
+                onClick={() =>
+                  setActiveFilter(activeFilter === cat.id ? "all" : cat.id)
+                }
+                className={`font-mono text-xs px-4 py-2 rounded-full border whitespace-nowrap transition-colors ${
+                  activeFilter === cat.id
+                    ? "text-bg border-transparent"
+                    : "border-border text-text-dim hover:border-text-dim"
+                }`}
+                style={
+                  activeFilter === cat.id
+                    ? { backgroundColor: cat.accent }
+                    : undefined
+                }
+              >
+                {cat.label}
+              </button>
+            ))}
+          </div>
+
+          {/* Right gradient + arrow */}
+          <div className="absolute right-0 top-0 bottom-0 z-10 flex items-center">
+            <div className="w-10 h-full bg-gradient-to-l from-bg to-transparent pointer-events-none" />
+            <button
+              onClick={() => scrollRef.current?.scrollBy({ left: 200, behavior: "smooth" })}
+              className="absolute right-0 w-8 h-8 flex items-center justify-center rounded-full bg-surface border border-border text-text-dim hover:text-text transition-colors"
+              aria-label="Scroll right"
+            >
+              ›
+            </button>
+          </div>
         </div>
       </nav>
 
@@ -165,7 +190,7 @@ export default function Home() {
         <p className="font-mono text-sm text-text-dim mb-2">
           Best Robot in the World
         </p>
-        <p className="text-xs text-text-muted">
+        <p className="text-xs text-text-dim">
           Curated by One Prompt Away · Data from public sources · Rankings
           reflect editorial judgment
         </p>
