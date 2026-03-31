@@ -1,0 +1,149 @@
+{
+  "lastUpdated": "2026-02",
+  "categories": [
+    {
+      "id": "industrial",
+      "label": "🏭 Best Factory Worker",
+      "accent": "#f97316",
+      "champion": {
+        "name": "Figure 02",
+        "company": "Figure AI",
+        "country": "USA",
+        "reason": "Completed an 11-month deployment at BMW's Spartanburg plant — the longest publicly documented humanoid factory deployment. Loaded 90,000+ parts, contributed to 30,000+ BMW X3 vehicles.",
+        "stats": [
+          { "label": "Runtime", "value": "1,250 hrs" },
+          { "label": "Cycle Time", "value": "84 sec" },
+          { "label": "Precision", "value": "5mm tolerance" },
+          { "label": "Funding", "value": "$1.75B" }
+        ],
+        "latestUpdate": "Figure 03 announced, F02 retired from BMW — Nov 2025"
+      }
+    },
+    {
+      "id": "locomotion",
+      "label": "🦿 Best Locomotion",
+      "accent": "#34d399",
+      "champion": {
+        "name": "Atlas (Electric)",
+        "company": "Boston Dynamics",
+        "country": "USA (Hyundai)",
+        "reason": "Production version unveiled at CES 2026. 30+ years of R&D distilled into an all-electric platform with superhuman range of motion, 56 DoF, and IP67 durability. 2026 production fully committed.",
+        "stats": [
+          { "label": "Payload", "value": "50 kg" },
+          { "label": "Reach", "value": "2.3 m" },
+          { "label": "Battery Swap", "value": "3 min" },
+          { "label": "Est. Price", "value": "~$420K" }
+        ],
+        "latestUpdate": "Production-ready version launched at CES — Jan 2026"
+      }
+    },
+    {
+      "id": "dexterity",
+      "label": "🤌 Best Dexterous Hands",
+      "accent": "#a78bfa",
+      "champion": {
+        "name": "Galbot G1",
+        "company": "GALBOT (银河通用)",
+        "country": "China",
+        "reason": "Powered by billion-scale manipulation datasets and end-to-end embodied AI models (GraspVLA, GroceryVLA). 1000+ industrial units shipped. Runs 24/7 autonomous retail stores.",
+        "stats": [
+          { "label": "Units Shipped", "value": "1,000+" },
+          { "label": "Model", "value": "GraspVLA" },
+          { "label": "Application", "value": "Retail/Logistics" },
+          { "label": "Funding", "value": "$100M+" }
+        ],
+        "latestUpdate": "GroceryVLA model released for retail applications — 2025"
+      }
+    },
+    {
+      "id": "affordable",
+      "label": "💰 Most Affordable Humanoid",
+      "accent": "#fbbf24",
+      "champion": {
+        "name": "小布米 (XiaobuMi)",
+        "company": "Unknown Startup",
+        "country": "China",
+        "reason": "Priced at ¥9,998 (~$1,370), breaking the price floor for consumer humanoid robots. Crowdfunded and shipped to early backers.",
+        "stats": [
+          { "label": "Price", "value": "¥9,998" },
+          { "label": "USD Equiv.", "value": "~$1,370" },
+          { "label": "Target", "value": "Consumer" },
+          { "label": "Status", "value": "Shipping" }
+        ],
+        "latestUpdate": "First batch shipped to crowdfund backers — 2025"
+      }
+    },
+    {
+      "id": "quadruped",
+      "label": "🐕 Best Quadruped",
+      "accent": "#38bdf8",
+      "champion": {
+        "name": "Spot",
+        "company": "Boston Dynamics",
+        "country": "USA (Hyundai)",
+        "reason": "The gold standard for enterprise quadrupeds — proven in power plants, construction sites, and hazardous environments. Autonomous inspection at industrial scale.",
+        "stats": [
+          { "label": "Deployments", "value": "1,500+" },
+          { "label": "Runtime", "value": "~90 min" },
+          { "label": "Payload", "value": "14 kg" },
+          { "label": "IP Rating", "value": "IP54" }
+        ],
+        "latestUpdate": "Continued fleet expansion across energy sector — 2025"
+      }
+    },
+    {
+      "id": "autonomy",
+      "label": "🧠 Best Robot Brain",
+      "accent": "#f472b6",
+      "champion": {
+        "name": "π₀ (Pi-Zero)",
+        "company": "Physical Intelligence",
+        "country": "USA",
+        "reason": "A generalist robot foundation model that controls multiple robot types across diverse tasks — folding laundry, bussing tables, assembling boxes — from a single neural network. The GPT moment for robotics.",
+        "stats": [
+          { "label": "Approach", "value": "Foundation Model" },
+          { "label": "Tasks", "value": "Multi-task" },
+          { "label": "Funding", "value": "$400M" },
+          { "label": "Valuation", "value": "$2B" }
+        ],
+        "latestUpdate": "Raised $400M Series A at $2B valuation — Nov 2024"
+      }
+    },
+    {
+      "id": "endurance",
+      "label": "🏃 Best Endurance",
+      "accent": "#6ee7b7",
+      "champion": {
+        "name": "N2 小顽童",
+        "company": "SoulGate (松延动力)",
+        "country": "China",
+        "reason": "Runner-up at the world's first humanoid robot half-marathon (Beijing Yizhuang, 2025). First humanoid to perform continuous backflips across indoor and outdoor environments.",
+        "stats": [
+          { "label": "Height", "value": "118 cm" },
+          { "label": "Weight", "value": "30 kg" },
+          { "label": "Feat", "value": "Multi-flip" },
+          { "label": "Marathon", "value": "2nd place" }
+        ],
+        "latestUpdate": "Appeared on CCTV Spring Festival Gala — Feb 2026"
+      }
+    },
+    {
+      "id": "interaction",
+      "label": "💬 Best Human Interaction",
+      "accent": "#fb923c",
+      "champion": {
+        "name": "MagicBot Z1",
+        "company": "MagicAtom (魔法原子)",
+        "country": "China",
+        "reason": "AI-powered emotion sensing via voice and facial expression analysis. Can respond to human gestures and emotional states in real-time. Deployed in unmanned café, tea shop, and pharmacy scenarios.",
+        "stats": [
+          { "label": "DoF", "value": "24" },
+          { "label": "Torque", "value": "130 N·m" },
+          { "label": "Interaction", "value": "Voice + Emotion" },
+          { "label": "Founded", "value": "Jan 2024" }
+        ],
+        "latestUpdate": "16 units performed on CCTV Spring Festival Gala — Feb 2026"
+      }
+    }
+  ]
+}
