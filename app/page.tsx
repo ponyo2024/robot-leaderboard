@@ -38,28 +38,26 @@ function RobotCard({
       style={{ animationDelay: `${index * 80}ms`, borderTopWidth: "3px", borderTopColor: accent }}
     >
       {/* Robot image */}
-      <div className="relative h-48 overflow-hidden">
+      <div
+        className="relative h-56 overflow-hidden"
+        style={{ background: `linear-gradient(135deg, ${accent}15 0%, ${accent}08 50%, transparent 100%)` }}
+      >
         {imageSrc && !imgError ? (
           <img
             src={imageSrc}
             alt={champion.name}
-            className="w-full h-full object-cover"
+            className="w-full h-full object-contain"
             onError={() => setImgError(true)}
           />
         ) : (
-          <div
-            className="w-full h-full flex items-center justify-center"
-            style={{
-              background: `linear-gradient(135deg, ${accent}18 0%, ${accent}08 50%, transparent 100%)`,
-            }}
-          >
+          <div className="w-full h-full flex items-center justify-center">
             <span className="text-5xl font-bold font-mono opacity-20" style={{ color: accent }}>
               {champion.name.charAt(0)}
             </span>
           </div>
         )}
         {/* Bottom gradient fade into card */}
-        <div className="absolute inset-x-0 bottom-0 h-20 bg-gradient-to-t from-surface to-transparent" />
+        <div className="absolute inset-x-0 bottom-0 h-16 bg-gradient-to-t from-surface to-transparent" />
         {/* Category pill overlay */}
         <div
           className="absolute top-3 left-3 font-mono text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full"
